@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "0d096aa5-5edc-409e-b0f7-5137ef7bda50",
+		"name": "Crud operations",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24444017"
+	},
+	"item": [
+		{
+			"name": "Get list of all customers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7044/api/Cust/GetCustomers",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7044",
+					"path": [
+						"api",
+						"Cust",
+						"GetCustomers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get list of customers by id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Adds  customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"custID\": 6,\r\n  \"custName\": \"Mina\",\r\n  \"custCity\": \"Baroda\",\r\n  \"custContact\": 637828\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7044/api/Cust/AddCustomer",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7044",
+					"path": [
+						"api",
+						"Cust",
+						"AddCustomer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Updates customer",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"custID\": 6,\r\n  \"custName\": \"Lina\",\r\n  \"custCity\": \"Vadoadara\",\r\n  \"custContact\": 568008\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7044/api/Cust/UpdateCustomer",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7044",
+					"path": [
+						"api",
+						"Cust",
+						"UpdateCustomer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"custID\": 6,\r\n  \"custName\": \"string\",\r\n  \"custCity\": \"string\",\r\n  \"custContact\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7044/api/Cust/DeleteCustomer",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7044",
+					"path": [
+						"api",
+						"Cust",
+						"DeleteCustomer"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
